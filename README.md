@@ -1,3 +1,4 @@
+intelliux\client\src\assets\IntelliUX LOGO.png
 
 # IntelliUX
 
