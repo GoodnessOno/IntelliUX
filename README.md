@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IntelliUX
 
-## Available Scripts
+IntelliUX is an intelligent design assistant that enhances the web application user interface (UI) by providing real-time suggestions, accessibility improvements, and sustainability tips. Leveraging machine learning (ML), IntelliUX analyzes existing UIs and offers recommendations for enhancements tailored to specific user needs and environmental sustainability.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Accessibility Enhancements:**
+  - Real-time analysis of UI components to ensure accessibility to people with disabilities (e.g., colour contrast checks, voice-over compatibility).
+  
+- **Sustainability Tips:**
+  - Suggestions for reducing energy consumption by optimizing animations and reducing unnecessary resource usage.
+  
+- **Personalization:**
+  - Options to adapt UIs for different user demographics and needs, improving overall user satisfaction.
+  
+- **UI Improvement Suggestions:**
+  - Provides dynamic, real-time suggestions and integrates directly with the development environment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js and npm installed
+- Dependencies installed
+- Google AI Studio account for ML model training and deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/IntelliUX.git
+   cd IntelliUX
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server:
+   ```sh
+   npm start
+   ```
 
-### `npm run eject`
+2. Train the ML model using Google AI Studio:
+   - Follow the instructions in the `model_training` directory to prepare and upload your data to Google AI Studio.
+   - Configure the model in `config.json` with your API keys and model details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the analysis:
+   ```sh
+   python analyze.py
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Example Inputs and Outputs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Input:** 
+```json
+{
+  "action": "check_color_contrast",
+  "foreground_color": "#FFFFFF",
+  "background_color": "#0000FF"
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Output:** 
+```json
+{
+  "contrast_ratio": 8.59,
+  "accessibility_compliant": true,
+  "suggestions": []
+}
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We welcome contributions from the community! Please read our CONTRIBUTING.md file for more information on how to get started.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
+- Thanks to the contributors who have helped in the development of IntelliUX.
+- Special thanks to Google AI Studio for providing the tools and resources to build the ML models used in this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+For any inquiries, please get in touch with ononogbugoodness@gmail.com.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
