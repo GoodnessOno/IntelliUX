@@ -1,5 +1,3 @@
-! (intelliux\client\src\assets\IntelliUX LOGO.png)
-
 # IntelliUX
 
 IntelliUX is an intelligent design assistant that enhances the web application user interface (UI) by providing real-time suggestions, accessibility improvements, and sustainability tips. Leveraging machine learning (ML), IntelliUX analyzes existing UIs and offers recommendations for enhancements tailored to specific user needs and environmental sustainability.
@@ -38,6 +36,9 @@ IntelliUX is an intelligent design assistant that enhances the web application u
    ```sh
    npm install
    ```
+### Run in your server
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Usage
 
