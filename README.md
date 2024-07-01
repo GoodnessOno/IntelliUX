@@ -1,4 +1,4 @@
-intelliux\client\src\assets\IntelliUX LOGO.png
+! (intelliux\client\src\assets\IntelliUX LOGO.png)
 
 # IntelliUX
 
