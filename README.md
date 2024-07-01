@@ -45,15 +45,6 @@ IntelliUX is an intelligent design assistant that enhances the web application u
    npm start
    ```
 
-2. Train the ML model using Google AI Studio:
-   - Follow the instructions in the `model_training` directory to prepare and upload your data to Google AI Studio.
-   - Configure the model in `config.json` with your API keys and model details.
-
-3. Run the analysis:
-   ```sh
-   python analyze.py
-   ```
-
 ### Example Inputs and Outputs
 
 **Input:** 
